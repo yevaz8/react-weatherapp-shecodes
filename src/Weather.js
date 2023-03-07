@@ -18,22 +18,22 @@ export default function Weather(props) {
       city: response.data.name,
       icon: response.data.weather[0].icon,
     });
-
-    function handleSubmit(event) {
-      event.preventDefault();
-      search(city);
-    }
-
-    function search() {
-      const apiKey = `fd8efcbbe96effdbc75ef363bcb175b1`;
-      const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-      axios.get(apiUrl).then(handleResponse);
-    }
-
-    function handleCityChange(event) {
-      setCity(event.target.value);
-    }
   }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    search();
+  }
+  function handleCityChange(event) {
+    setCity(event.target.value);
+  }
+
+  function search() {
+    const apiKey = `fd8efcbbe96effdbc75ef363bcb175b1`;
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(handleResponse);
+  }
+
   if (weatherData.ready) {
     return (
       <div className="weather">

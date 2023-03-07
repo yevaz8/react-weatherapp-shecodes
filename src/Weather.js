@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import formatedDate from "./FormatedDate";
+import FormatedDate from "./FormatedDate";
 import "./Weather.css";
 import axios from "axios";
 
-export default function Weather() {
+export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   function handleResponse(response) {
     setWeatherData({
@@ -71,8 +71,8 @@ export default function Weather() {
       </div>
     );
   } else {
-    const apiKey = `eaf223fbefa74d0f073135b8f2023cf9`;
-    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    const apiKey = `fd8efcbbe96effdbc75ef363bcb175b1`;
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultcity}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
     return "Loading...";
   }

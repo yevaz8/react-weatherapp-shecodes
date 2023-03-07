@@ -28,10 +28,12 @@
     font-weight: 400;
 }
 
-.weather img {
+.weather canvas {
     height: 64px;
-    margin-right: 10px;
-    width: 64px;
+    margin-right: 5px;
+    margin-top: 5px;
+    display: inline-block;
+
 }
 
 .weather .units {

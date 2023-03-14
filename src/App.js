@@ -17,7 +17,7 @@ export default function App() {
             {" "}
             open-sourced on Github
           </a>{" "}
-          and hosted on{" "}
+          and hosted{" "}
           <a
             href="https://master--incomparable-pika-e40f94.netlify.app/"
             target="_blank"

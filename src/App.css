@@ -3,7 +3,24 @@
     margin: 30px auto;
 }
 
+@media screen and (max-width: 700px) {
+    .App {
+        display: inline-block;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+
+}
+
 .App footer {
     font-size: 11px;
     margin: 10px 0;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
 }

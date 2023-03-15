@@ -4,6 +4,8 @@ import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
 import ForecastDay from "./ForecastDay";
 
+import { Triangle } from "react-loader-spinner";
+
 export default function Weather(props) {
   const [city, setCity] = useState(props.defaultcity);
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -67,6 +69,16 @@ export default function Weather(props) {
     );
   } else {
     search();
-    return "Loading...";
+    return (
+      <Triangle
+        height="80"
+        width="80"
+        color="black"
+        ariaLabel="triangle-loading"
+        wrapperStyle={{}}
+        wrapperClassName=""
+        visible={true}
+      />
+    );
   }
 }

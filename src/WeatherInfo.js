@@ -13,14 +13,14 @@ export default function WeatherInfo(props) {
         </li>
         <li className="text-capitalize">{props.data.description}</li>
         <li className="text-capitalize">
-          Feels like: {Math.round(props.data.realfeel)}ºC
+          Feels like: {Math.round(props.data.realfeel)} ºC
         </li>
       </ul>
       <div className="row mt-3">
         <div className="col-6">
           <div className="d-flex">
             <div>
-              <WeatherIcon code={props.data.icon} size={52} />
+              <WeatherIcon code={props.data.icon} size={55} />
             </div>
 
             <div>

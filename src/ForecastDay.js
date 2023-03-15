@@ -20,7 +20,7 @@ export default function ForecastDay(props) {
     let latitude = props.coordinates.lat;
     let longitude = props.coordinates.lon;
     let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
-
+    console.log(apiUrl);
     axios.get(apiUrl).then(handleResponse);
   }
 

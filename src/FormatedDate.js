@@ -19,7 +19,7 @@ export default function formatedDate(props) {
   let minuts = props.date.getMinutes();
   return (
     <div>
-      {day} {hours}: {minuts}
+      {day} {hours}:{minuts}
     </div>
   );
 }

@@ -71,8 +71,8 @@ export default function Weather(props) {
     search();
     return (
       <Triangle
-        height="80"
-        width="80"
+        height="100"
+        width="100"
         color="black"
         ariaLabel="triangle-loading"
         wrapperStyle={{}}

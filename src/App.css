@@ -7,7 +7,7 @@
 
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 740px) {
     .App {
         display: inline-block;
     }
@@ -18,6 +18,7 @@
 
 
 }
+
 
 .App footer {
     font-size: 11px;

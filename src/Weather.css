@@ -6,7 +6,17 @@
     color: rgb(135, 135, 135);
 }
 
+@media screen and (max-width: 740px) and (min-width:300px) {
+    .Weather {
+        display: inline-block;
+    }
 
+    .button {
+        padding: 8px 10px;
+
+    }
+
+}
 
 .Weather h1 {
     font-size: 30px;
@@ -32,7 +42,6 @@
     color: rgb(33, 33, 33);
     font-size: 64px;
     line-height: 64px;
-
     font-weight: 400;
     margin-left: 15px;
 }
@@ -50,16 +59,15 @@
     top: -34px;
 }
 
-.weatherConditions {
-    margin-top: 5px;
-    margin-left: 6rem;
-}
+
+
 
 .button {
+
     background: white;
     cursor: pointer;
     border: none;
-    padding: 8px 25px;
+    padding: 8px 18px;
     color: black;
     font-size: 15px;
     font-weight: lighter;
@@ -68,6 +76,7 @@
 }
 
 .button::before {
+
     content: "";
     position: absolute;
     top: 0;
@@ -94,9 +103,4 @@
     100% {
         background-position: 0 0;
     }
-}
-
-.WeatherForecast {
-    margin-top: 20px;
-    margin-bottom: 10px;
 }

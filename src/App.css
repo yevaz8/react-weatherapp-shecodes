@@ -1,10 +1,22 @@
 .App {
-    max-width: 600px;
+    max-width: 700px;
     margin: 50px auto;
 
 
 }
 
+.App .card {
+    background-color: transparent;
+
+}
+
+
+
+body {
+    background: url(./images/main-clear.jpeg);
+    background-size: no-repeat center center/cover;
+
+}
 
 
 @media screen and (max-width: 740px) {
@@ -21,11 +33,13 @@
 
 
 .App footer {
-    font-size: 11px;
+    font-size: 14px;
     margin: 10px 0;
     text-align: center;
 }
 
 footer a {
     text-decoration: none;
+    font-size: 14px;
+    color: black;
 }

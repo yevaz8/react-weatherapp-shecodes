@@ -6,7 +6,11 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <Weather defaultcity="Salto" />
+        <div className="card">
+          <div className="card-body">
+            <Weather defaultcity="Salto" />
+          </div>
+        </div>
         <footer>
           This projects was coded by Yesica Vázquez and is{" "}
           <a

@@ -1,8 +1,10 @@
-.weatherForecast {
+.WeatherForecast {
     text-align: center;
+
 }
 
-.weatherForecast-tempertaure-min {
+.WatherForecast-tempertaure-min {
     opacity: 0.6;
-    margin-left: 5px;
+
+    margin-left: 10px;
 }
